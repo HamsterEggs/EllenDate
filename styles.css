@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.heart-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><text y="20" font-size="20">❤️</text></svg>') repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ffccd5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6699;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, input, select, button {
+    display: block;
+    margin: 10px auto;
+}
+
+input, select {
+    padding: 5px;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff3366;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmation {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #ffccd5;
+    background-color: #ffe6f2;
+    border-radius: 10px;
+}
+
+.log-link {
+    display: block;
+    margin-top: 20px;
+    color: #ff6699;
+    text-decoration: none;
+}
+
+.log-link:hover {
+    text-decoration: underline;
+}

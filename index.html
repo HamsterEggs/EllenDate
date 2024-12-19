@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Date Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heart-bg"></div>
+    <div class="container">
+        <h1>❤️ I love you ❤️</h1>
+        <form id="date-form">
+            <label for="date">Choose a date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Choose a time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="activity">Choose an activity:</label>
+            <select id="activity" name="activity" required>
+                <option value="dinner">Dinner</option>
+                <option value="movie">Movie</option>
+                <option value="walk">Walk in the park</option>
+                <option value="concert">Concert</option>
+                <option value="custom">Custom Activity</option>
+            </select>
+            <div id="custom-activity-container" class="hidden">
+                <label for="custom-activity">Enter custom activity:</label>
+                <input type="text" id="custom-activity" name="custom-activity">
+            </div>
+            <button type="submit">Schedule Date</button>
+        </form>
+        <div id="confirmation" class="hidden"></div>
+        <a href="Log1.html" target="_blank" class="log-link">View Scheduled Dates Log</a>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('ayBuLMeY3K3g_m-oS');  // Replace with your EmailJS user ID
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ayBuLMeY3K3g_m-oS",
+      });
+   })();
+</script>
+</html>
